@@ -1,6 +1,6 @@
 // configure mongo db
 const mongoose = require("mongoose");
-
+require("dotenv").config();
 // local machine configuration
 // mongoose.connect("mongodb://localhost:27017/users");
 
