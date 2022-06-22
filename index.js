@@ -1,6 +1,6 @@
 const express = require("express");
-const port = process.env.PORT || 8000;
 require("dotenv").config();
+const port = process.env.PORT || 8000;
 const app = express();
 
 // urlencoded is a built-in middleware function in express, it parses incoming requests with url encoded payloads and is based on body parser.
