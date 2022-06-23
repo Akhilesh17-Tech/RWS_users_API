@@ -1,6 +1,5 @@
 const User = require("../models/users");
 const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
 
 module.exports.register = async function (req, res) {
   try {
@@ -47,7 +46,7 @@ module.exports.register = async function (req, res) {
   }
 };
 
-module.exports.createSession = async function (req, res) {
+module.exports.login = async function (req, res) {
   try {
     //   finding the user in db
     let user = await User.findOne({ email: req.body.email });
